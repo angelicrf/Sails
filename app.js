@@ -1,4 +1,4 @@
-let sr = require('../Sails/config/local');
+
 process.chdir(__dirname);
 
 var sails;
@@ -23,7 +23,7 @@ try {
 
 // sails.lift(rc('sails'));
 var config = rc('sails');
-if (sr.local.environment && sr.local.port) {
+if (process.env.PORT && process.env.NODE_ENV === 'production') {
   config.hooks = config.hooks || {};
   config.hooks.grunt = false;
 }
