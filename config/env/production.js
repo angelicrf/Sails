@@ -251,7 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
      onlyAllowOrigins: [
-       'https://polar-lowlands-35092.herokuapp.com/'
+       'https://polar-lowlands-35092.herokuapp.com'
   ],
 
 
